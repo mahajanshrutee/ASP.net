@@ -1,0 +1,3 @@
+Save Button Coding:
+Label1.Text="welcome" +Server.HtmlEncode(TextBox1.Text) +"<br/> The 
+URL is:" +Server.UrlEncode(Request.Url.ToString());
