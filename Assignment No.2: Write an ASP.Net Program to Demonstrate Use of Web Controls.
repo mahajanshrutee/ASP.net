@@ -1,0 +1,31 @@
+using System;
+usingSystem.Collections.Generic;
+usingSystem.Linq;
+usingSystem.Web;
+usingSystem.Web.UI;
+usingSystem.Web.UI.WebControls;
+publicpartialclass_Default :System.Web.UI.Page
+{
+protectedvoidPage_Load(object sender, EventArgs e)
+ {
+ }
+protectedvoid Button1_Click(object sender, EventArgs e)
+ {
+ Label5.Text = TextBox1.Text;
+if (RadioButton1.Checked == true)
+ {
+ Label6.Text = RadioButton1.Text;
+ }
+else
+ {
+ Label6.Text = RadioButton2.Text;
+ }
+foreach(ListItem Item in CheckBoxList1.Items)
+ {
+if (Item.Selected)
+ {
+ Label7.Text += Item.Text + " ";
+ }
+ }
+ }
+}
