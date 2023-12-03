@@ -1,0 +1,9 @@
+Button Coding:
+if (Text1.Value == "abc" && Text2.Value == "1234")
+{
+Label1.Text = "login successfull";
+}
+else
+{
+Label1.Text = "user name and password incorrect";
+}
